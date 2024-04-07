@@ -128,20 +128,5 @@ public class RecipeEntity {
     public void setDatabase(String database) {
         this.database = database;
     }
-    @Override
-public String toString() {
-    return "RecipeEntity{" +
-            "id=" + id +
-            ", title='" + title + '\'' +
-            ", ingredients='" + ingredients + '\'' +
-            ", instructions='" + instructions + '\'' +
-            ", prepTime='" + prepTime + '\'' +
-            ", cookTime='" + cookTime + '\'' +
-            ", totalTime=" + totalTime +
-            ", servings=" + servings +
-            ", imageUrl='" + imageUrl + '\'' +
-            ", database='" + database + '\'' +
-            '}';
-}
 }
 

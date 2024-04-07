@@ -7,6 +7,6 @@ import java.util.List;
 
 @Repository
 public interface RecipeRepository extends CrudRepository<RecipeEntity, Long> {
-    public List<RecipeEntity> findByTitle(String title);
+    public List<RecipeEntity> findAll();
 }
 
