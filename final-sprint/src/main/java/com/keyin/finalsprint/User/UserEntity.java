@@ -1,4 +1,4 @@
-package com.keyin.finalsprint.users;
+package com.keyin.finalsprint.User;
 
 import jakarta.persistence.*;
 
@@ -20,11 +20,12 @@ public class UserEntity {
     private String email;
 
     // Constructors
+
     public UserEntity() {
+        // Default constructor
     }
 
-    public UserEntity(Long id, String username, String password, String email) {
-        this.id = id;
+    public UserEntity(String username, String password, String email) {
         this.username = username;
         this.password = password;
         this.email = email;
