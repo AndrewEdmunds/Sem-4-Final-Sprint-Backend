@@ -1,6 +1,5 @@
 package com.keyin.finalsprint.User;
 
-import com.keyin.finalsprint.Auth.SignupRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.security.crypto.password.PasswordEncoder;

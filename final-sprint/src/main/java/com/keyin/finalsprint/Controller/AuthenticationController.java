@@ -5,8 +5,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.keyin.finalsprint.User.UserService;
+import com.keyin.finalsprint.User.SignupRequest;
 import com.keyin.finalsprint.User.UserEntity;
-import com.keyin.finalsprint.Auth.SignupRequest;
 
 @RestController
 @RequestMapping("/api")
