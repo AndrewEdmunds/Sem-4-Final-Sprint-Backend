@@ -1,4 +1,4 @@
-package com.keyin.finalsprint.Recipe;
+package com.keyin.finalsprint.Entity;
 import jakarta.persistence.*;
 
 @Entity

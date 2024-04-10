@@ -1,4 +1,4 @@
-package com.keyin.finalsprint.Query_log;
+package com.keyin.finalsprint.Entity;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 

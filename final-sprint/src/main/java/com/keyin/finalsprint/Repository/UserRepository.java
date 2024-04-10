@@ -1,7 +1,9 @@
-package com.keyin.finalsprint.User;
+package com.keyin.finalsprint.Repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
+
+import com.keyin.finalsprint.Entity.UserEntity;
 
 import java.util.List;
 

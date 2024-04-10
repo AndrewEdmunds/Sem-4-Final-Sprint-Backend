@@ -1,4 +1,4 @@
-package com.keyin.finalsprint.User;
+package com.keyin.finalsprint.Entity;
 
 import jakarta.persistence.*;
 

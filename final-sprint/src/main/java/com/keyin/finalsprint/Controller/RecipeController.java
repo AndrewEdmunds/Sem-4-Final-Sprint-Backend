@@ -1,7 +1,10 @@
-package com.keyin.finalsprint.Recipe;
+package com.keyin.finalsprint.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.keyin.finalsprint.Entity.RecipeEntity;
+import com.keyin.finalsprint.Service.RecipeService;
 
 import java.util.List;
 

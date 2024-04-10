@@ -1,7 +1,10 @@
-package com.keyin.finalsprint.Query_log;
+package com.keyin.finalsprint.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.keyin.finalsprint.Entity.LogEntity;
+import com.keyin.finalsprint.Service.LogService;
 
 import java.util.List;
 

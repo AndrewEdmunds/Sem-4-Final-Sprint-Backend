@@ -4,9 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.keyin.finalsprint.User.UserService;
+
+import com.keyin.finalsprint.Entity.UserEntity;
+import com.keyin.finalsprint.Service.UserService;
 import com.keyin.finalsprint.User.SignupRequest;
-import com.keyin.finalsprint.User.UserEntity;
 
 @RestController
 @RequestMapping("/api")
