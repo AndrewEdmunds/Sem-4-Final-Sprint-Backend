@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 import com.keyin.finalsprint.Entity.UserEntity;
 import com.keyin.finalsprint.Repository.UserRepository;
 
-import org.springframework.security.crypto.password.PasswordEncoder;
-
 import java.util.List;
+import java.util.Optional;
+
 
 @Service
 public class UserService {
@@ -26,8 +26,8 @@ public class UserService {
     }
 
     public boolean isUsernameUnique(String username) {
-        List<UserEntity> users = userRepository.findByUsername(username);
-        return users.isEmpty();
+        Optional<UserEntity> user = userRepository.findByUsername(username);
+        return !user.isPresent();
     }
     
     public boolean isEmailUnique(String email) {
@@ -39,5 +39,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    // Implement more service methods for CRUD operations
+    public Optional<UserEntity> findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

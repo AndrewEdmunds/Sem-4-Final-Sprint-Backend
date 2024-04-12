@@ -23,6 +23,4 @@ public class LogController {
     public List<LogEntity> getAllLogs() {
         return logService.getAllLogs();
     }
-
-    // Add more CRUD endpoints as needed
 }

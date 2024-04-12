@@ -22,5 +22,4 @@ public class LogService {
         return logRepository.findAll();
     }
 
-    // Implement more service methods for CRUD operations
 }

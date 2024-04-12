@@ -23,6 +23,4 @@ public class RecipeController {
     public List<RecipeEntity> getAllRecipes() {
         return recipeService.getAllRecipes();
     }
-
-    // Add more CRUD endpoints as needed
 }

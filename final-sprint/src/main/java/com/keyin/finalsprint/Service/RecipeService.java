@@ -22,5 +22,4 @@ public class RecipeService {
         return recipeRepository.findAll();
     }
 
-    // Implement more service methods for CRUD operations
 }
