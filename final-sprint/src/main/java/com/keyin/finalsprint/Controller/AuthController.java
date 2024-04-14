@@ -96,7 +96,7 @@ public class AuthController {
             } else {
                 // If the session is not valid or the token is invalid, return authentication status false
                 logger.warn("Invalid token provided for authentication status check: {}", token);
-                return ResponseEntity.ok().body(new AuthResponse(null, null));
+                return ResponseEntity.ok().body(null);
             }
         } catch (Exception e) {
             // Log any exceptions that occur during the authentication status check

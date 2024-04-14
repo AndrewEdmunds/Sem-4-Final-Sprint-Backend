@@ -22,6 +22,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests((authorize) -> authorize.anyRequest().authenticated()).httpBasic();
         return http.build();
     }
+    
 
 }
 
