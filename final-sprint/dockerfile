@@ -1,0 +1,30 @@
+# Use a base image with Maven and JDK 20 installed
+FROM maven:3.8.4-openjdk-17 AS build
+
+
+# Set the working directory in the image
+WORKDIR /final-sprint
+
+# Copy the pom.xml file into the image
+COPY pom.xml .
+
+# Download dependencies as specified in pom.xml
+RUN mvn dependency:go-offline -B
+
+# Copy the rest of the application code into the image
+COPY src ./src
+
+# Build the application
+RUN mvn package
+
+# Use OpenJDK 20 for runtime
+FROM openjdk:17-jdk-alpine
+
+# Copy the built JAR file from the build image to the new image
+COPY --from=build /final-sprint/target/final-sprint-0.0.1-SNAPSHOT.jar /final-sprint.jar
+
+# Make port 8080 available to the world outside this container
+EXPOSE 8080
+
+# Run the jar file 
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/final-sprint.jar"]
